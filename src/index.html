@@ -15,10 +15,55 @@
     <a href="#news">Novidades</a>
     <a href="#contact">Contato</a>
     <a href="#about">Sobre</a>
-
   </header>
 
-  <main></main>
+  <div class="card-validation">
+    <h1>Card<span id="plus">PLUS</span></h1> <br /><span id="validCard"> Validação de Cartão de Crédito</span>
+  </div>
+
+  <main>
+    <div class="cardspan-box">
+      <div class="cardspan">
+        <span>
+          <p>O que é validar um cartão?</p>
+          A validação do cartão de crédito é o primeiro passo para aceitar um pagamento com cartão. <br />
+          Após uma validação bem sucedida, o comerciante irá introduzir o número do cartão em um programa de
+          software comercial <br />
+          ou uma máquina de cartão de crédito, que envia o número da conta para o emissor do cartão para
+          autorização.
+        </span>
+      </div>
+
+      <div class="card-span-valid">
+        <p id="p1">Como saber se o meu cartão é válido?</p>
+        <p>- Digite o numero do seu cartão no local indicado</p>
+        <p>- Clique no botão "Conferir" </p>
+        <p>Pronto! Você será informado se o número do seu cartão pode ser validado ou não.</p>
+
+        <p id="p1">Por que validar o meu cartão?</p>
+        <p>O uso primário de validação do cartão de crédito<br />
+          é para permitir que os comerciantes identifiquem números
+          de cartões de crédito falsos antes de solicitar uma autorização
+          da empresa do cartão.</p>
+      </div>
+
+      <div class="img-thinking">
+        <img src="./img/thinking.jpg">
+      </div>
+    </main>
+
+    <div class="div"></div>
+
+      <section class="content-main">
+
+        <input class="input" id="card-number" name="somename" placeholder="XXXX XXXX XXXX XXXX" />
+
+        <button class="button-valid" onclick="showModal()" type="button">VALIDAR</button>
+      </section>
+
+    </div>
+
+
   <footer></footer>
 
   <script src="index.js" type="module"></script>
