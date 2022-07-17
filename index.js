@@ -19,10 +19,13 @@ function GetCardNumber() {
   if (cardNumberIsValid) {  //condition displayed, if the card number is valid.
     element2.innerHTML = ` Olá! O seu cartão foi <b>validado com SUCESSO!</b> <br/> <br/>  <h2><b>${validator.maskify(getTypedValue)}</b></h2> `
 
+  } else if (getTypedValue == "") { //condition displayed, if the input is empty.
+    element2.innerHTML = "Por favor, digite um valor, antes de iniciar a validação!"
+
   } else { //condition displayed, if the card number is not valid.
     element2.innerHTML = ` Olá! O seu cartão <b>não pôde</b> ser validado. <br/>
     ligue para 0800 70 70 para obter mais informações. <br/> <br/> <h2> <b> ${validator.maskify(getTypedValue)} </b></h2>`
-    var img = img.src = "./img/sad.jpg"
+
   }
 }
 
