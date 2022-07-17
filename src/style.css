@@ -166,3 +166,12 @@ body{
   .button-valid:hover{
     background: linear-gradient(45deg, transparent 5%, #ff9305 5%);
 }
+
+footer{
+  text-align: center;
+}
+
+footer a{
+  text-decoration: none;
+  color: rgb(41, 41, 41);
+}
