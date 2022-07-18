@@ -47,7 +47,7 @@ body{
 .card-validation {
   width: 80%;
   text-align: left;
-  margin: auto;
+  margin-left: 18%;
 }
 
 .card-validation h1 {
@@ -65,7 +65,7 @@ body{
 
 .cardspan-box {
   width: 80%;
-  margin: auto;
+  margin-left: 18%;
   display: flex;
 }
 
@@ -116,6 +116,7 @@ body{
   font-size: 20px;
   font-weight: bold;
 }
+
 .div {
   display: flex;
   position: relative;
@@ -220,3 +221,4 @@ footer a{
   visibility: visible;
   transform: scale(1.0);
 }
+
