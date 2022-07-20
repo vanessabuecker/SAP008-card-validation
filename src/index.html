@@ -36,7 +36,8 @@
 
       <div class="card-span-valid">
         <p id="p1">Como saber se o meu cartão é válido?</p>
-        <p>- Digite o numero do seu cartão no local indicado</p>
+        <p>- Digite o número do cartão e o nome do titular no &nbsp;&nbsp;&nbsp;local indicado.</p>
+        <p>- Escolha a data de validade do cartão </p>
         <p>- Clique no botão "Conferir" </p>
         <p>Pronto! Você será informado se o número do seu cartão pode ser validado ou não.</p>
 
@@ -57,15 +58,18 @@
 
   <section class="content-main">
 
-    <input class="input" id="card-number" name="somename" placeholder="XXXX XXXX XXXX XXXX"
+    <input type="text" id="user-name" placeholder="Nome completo do titular"/>
+    <input type="month" id="input-val-card" name="start" min="2022-07" max="2029-07" value="2022-07">
+
+    <input class="input" id="card-number" placeholder="XXXX XXXX XXXX XXXX"
       oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
       type="number" maxlength="16" /> <!-- limits the maximum value of digits to 16-->
 
-    <button class="button-valid" onclick="showModal()" type="button">VALIDAR</button>
+    <button class="button-valid" type="button">VALIDAR</button>
 
     <div class="modal" id="modal">
       <div class="modal_content" id="modal_content"> </div>
-      <span id="close" onclick="hideModal()"> <img src="./img/close.png" alt="button close"></span>
+      <span id="close"> <img src="./img/close.png" alt="button close"></span>
     </div>
 
   </section>

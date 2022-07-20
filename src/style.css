@@ -5,13 +5,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   font-family: "Dosis";
 }
+
 .navbar {
   background-color: #333;
   overflow: hidden;
-  margin-bottom: 3%;
+  margin-bottom: 4%;
   height: 100%;
 }
 
@@ -54,7 +56,8 @@ body{
   font-size: 54px;
   margin: 0;
 }
-.card-validation #plus{
+
+.card-validation #plus {
   color: #FE7C08;
 }
 
@@ -71,19 +74,25 @@ body{
 
 .card-span-valid {
   display: block;
-  margin-top: 35px;
+  margin-top: 18px;
   width: 30%;
   margin-left: 12%;
   font-size: 18px;
 }
 
-.card-span-valid #p1, #p2{
+.card-span-valid #p1,
+#p2 {
   font-size: 20px;
   font-weight: bold;
 
 }
-#p1, .cardspan-box p, .cardspan-box span, .cardspan, .cardspan p{
-  color:  rgb(30, 29, 29);
+
+#p1,
+.cardspan-box p,
+.cardspan-box span,
+.cardspan,
+.cardspan p {
+  color: rgb(30, 29, 29);
 }
 
 .cardspan-box span {
@@ -96,8 +105,8 @@ body{
 
 .cardspan-box img {
   margin-top: 40%;
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
 }
 
 .cardspan {
@@ -134,11 +143,11 @@ body{
 }
 
 .content-main .input {
-  width: 500px;
+  width: 300px;
   height: 60px;
-  display: block;
-  margin: auto;
-  margin-bottom: 2%;
+  display: flex;
+  margin-left:33.5%;
+  margin-top: 0.5%;
   text-align: center;
   font-size: 16px;
   border-radius: 5px;
@@ -147,11 +156,39 @@ body{
   box-shadow: darkgrey;
 }
 
+.content-main #user-name{
+  width: 500px;
+  height: 60px;
+  display: block;
+  margin:auto;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: beige;
+  border: solid 1px #fe7b0889;
+  box-shadow: darkgrey;
+}
+.content-main #input-val-card {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  position: absolute;
+  margin: 53.5%;
+  margin-top: 0.5%;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: beige;
+  border: solid 1px #fe7b0889;
+  color: #333;
+  box-shadow: darkgrey;
+}
+
 .button-valid {
   display: block;
   margin: auto;
   font-weight: 700;
-  color:white;
+  color: white;
   border-radius: 5px;
   font-size: 20px;
   border: 0;
@@ -160,19 +197,20 @@ body{
   letter-spacing: 3px;
   outline: transparent;
   margin-bottom: 2%;
-  background: linear-gradient(45deg, transparent 5%,  #FE7C08 5%);
+  margin-top: 2%;
+  background: linear-gradient(45deg, transparent 5%, #FE7C08 5%);
   cursor: pointer;
 }
 
-  .button-valid:hover{
-    background: linear-gradient(45deg, transparent 5%, #ff9305 5%);
+.button-valid:hover {
+  background: linear-gradient(45deg, transparent 5%, #ff9305 5%);
 }
 
-footer{
+footer {
   text-align: center;
 }
 
-footer a{
+footer a {
   text-decoration: none;
   color: rgb(41, 41, 41);
 }
@@ -221,4 +259,3 @@ footer a{
   visibility: visible;
   transform: scale(1.0);
 }
-
