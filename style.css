@@ -57,8 +57,15 @@ body {
   margin: 0;
 }
 
+.card-validation #card {
+  font-size: 70px;
+  font-weight: 800;
+}
+
 .card-validation #plus {
   color: #FE7C08;
+  font-size: 70px;
+  font-weight: 800;
 }
 
 .card-validation #validCard {
@@ -74,7 +81,7 @@ body {
 
 .card-span-valid {
   display: block;
-  margin-top: 18px;
+  margin-top: 15px;
   width: 30%;
   margin-left: 12%;
   font-size: 18px;
@@ -143,46 +150,39 @@ body {
   margin: auto;
 }
 
-.content-main .input {
-  width: 300px;
+.input,
+#user-name,
+#input-val-card {
   height: 60px;
-  display: flex;
-  margin-left:33.5%;
-  margin-top: 0.5%;
   text-align: center;
-  font-size: 16px;
-  border-radius: 5px;
   background-color: beige;
   border: solid 1px #fe7b0889;
   box-shadow: darkgrey;
+  font-size: 16px;
+  border-radius: 5px;
+  color: rgba(61, 61, 57, 0.66);
+  font-size: 16px;
 }
 
-.content-main #user-name{
-  width: 500px;
-  height: 60px;
-  display: block;
-  margin:auto;
-  text-align: center;
-  font-size: 16px;
-  border-radius: 5px;
-  background-color: beige;
-  border: solid 1px #fe7b0889;
-  box-shadow: darkgrey;
+.content-main .input {
+  width: 300px;
+  display: flex;
+  margin-left: 33.5%;
+  margin-top: 0.5%;
 }
+
+.content-main #user-name {
+  width: 500px;
+  display: block;
+  margin: auto;
+}
+
 .content-main #input-val-card {
   width: 200px;
-  height: 60px;
   display: flex;
   position: absolute;
   margin: 53.5%;
   margin-top: 0.5%;
-  text-align: center;
-  font-size: 16px;
-  border-radius: 5px;
-  background-color: beige;
-  border: solid 1px #fe7b0889;
-  color: #333;
-  box-shadow: darkgrey;
 }
 
 .button-valid {
