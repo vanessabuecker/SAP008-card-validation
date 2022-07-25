@@ -15,29 +15,16 @@ const validator = {
 
   //Luhn Algorithm
   isValid(cardNumber) {
-    let digit, qntDigits, sum, i, reverseNumber_length, numberReverse;
-    sum = 0;
-    numberReverse = cardNumber.split('').reverse();
-    for (qntDigits = i = 0, reverseNumber_length = numberReverse.length; i < reverseNumber_length; qntDigits = ++i) { //++i incrementa o valor de i e retorna o valor já incrementado.
-      digit = numberReverse[qntDigits];
-      digit = +digit;
-      if (qntDigits % 2) {
+    let sum = 0;
+    for (let i = 0; i <= cardNumber.length - 1; i++) {
+      let digit = parseInt(cardNumber[i]);
+      if (i % 2) {
         digit *= 2;
-        if (digit < 10) {
-          sum += digit;
-        } else {
-          sum += digit - 9;
-        }
-      } else {
-        sum += digit;
+        if (digit > 9) digit -= 9;
       }
+      sum += digit;
     }
-
-    if (sum % 10 === 0) {
-      return true
-    } else {
-      return false
-    }
+    return sum % 10 === 0;
   }
 
 };
