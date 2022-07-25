@@ -4,7 +4,7 @@ const cardNumberInput = document.querySelector("#card-number")
 const buttonValid = document.querySelector(".button-valid")
 const spanClose = document.querySelector("#close")
 const username = document.querySelector("#user-name")
-const inputCardValidation = document.querySelector("#input-val-card")
+const inputDateValidation = document.querySelector("#input-val-card")
 
 buttonValid.addEventListener("click", GetCardNumber);
 
@@ -16,12 +16,13 @@ function GetCardNumber() {
 
   const getTypedValue = cardNumberInput.value;
   const getTypedUsername = username.value;
-  const getCardValidation = inputCardValidation.value
+  const getDateValidation = inputDateValidation.value
+
   const cardNumberIsValid = validator.isValid(getTypedValue)
 
   if (cardNumberIsValid === true) {  //condition displayed, if the card number is valid.
     element2.innerHTML = ` Olá, ${getTypedUsername}! O seu cartão foi <b>validado com SUCESSO!</b> <br/> <br/>  <h2><b>${validator.maskify(getTypedValue)}</b></h2>
-    validade: <b>${getCardValidation}</b>`
+    validade: <b>${getDateValidation}</b>`
 
   } else { //condition displayed, if the card number is not valid.
     element2.innerHTML = ` Olá, ${getTypedUsername}! O seu cartão <b>não pôde</b> ser validado. <br/>
