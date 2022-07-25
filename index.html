@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Tarjeta de crédito válida</title>
+  <title>CardPlus</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -18,7 +18,8 @@
   </header>
 
   <div class="card-validation">
-    <span id="card">Card</span><span id="plus">PLUS</span></h1> <br /><span id="validCard"> Validação de Cartão de Crédito</span>
+    <span id="card">Card</span><span id="plus">PLUS</span> <br /><span id="validCard"> Validação de Cartão de
+      Crédito</span>
   </div>
 
   <main>
@@ -58,12 +59,12 @@
 
   <section class="content-main">
 
-    <input type="text" id="user-name" placeholder="Nome completo do titular"/>
-    <input type="month" id="input-val-card" name="start" min="2022-07" max="2029-07" value="2022-07">
+    <input type="text" id="user-name" placeholder="Nome completo do titular" />
+    <input type="date" id="input-val-card" name="start" min="2022-07-01" max="2029-07-01" value="2022-07-21" />
 
     <input class="input" id="card-number" placeholder="XXXX XXXX XXXX XXXX"
       oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-      type="number" maxlength="16" /> <!-- limits the maximum value of digits to 16-->
+      type="number" maxlength="16" />
 
     <button class="button-valid" type="button">VALIDAR</button>
 
