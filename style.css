@@ -86,12 +86,14 @@ body {
   margin-left: 12%;
   font-size: 18px;
 }
+#p2{
+  margin-top: 10px;
+}
 
 .card-span-valid #p1,
 #p2 {
   font-size: 20px;
   font-weight: bold;
-
 }
 
 #p1,

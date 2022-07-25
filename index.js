@@ -20,15 +20,15 @@ function GetCardNumber() {
 
   const cardNumberIsValid = validator.isValid(getTypedValue)
 
-  if (cardNumberIsValid === true) {  //condition displayed, if the card number is valid.
+  if (cardNumberIsValid === true) {
     element2.innerHTML = ` Olá, ${getTypedUsername}! O seu cartão foi <b>validado com SUCESSO!</b> <br/> <br/>  <h2><b>${validator.maskify(getTypedValue)}</b></h2>
     validade: <b>${getDateValidation}</b>`
 
-  } else { //condition displayed, if the card number is not valid.
+  } else {
     element2.innerHTML = ` Olá, ${getTypedUsername}! O seu cartão <b>não pôde</b> ser validado. <br/>
     ligue para 0800 70 70 para obter mais informações. <br/> <br/> <h2> <b> ${validator.maskify(getTypedValue)} </b></h2>`
 
-  } if (getTypedValue === "") { //condition displayed, if the input is empty.
+  } if (getTypedValue === "") {
     element2.style.fontSize = "20px"
     element2.innerHTML = "Por favor, digite um valor, antes de iniciar a validação!⚠️"
   }
@@ -36,7 +36,7 @@ function GetCardNumber() {
 
 spanClose.addEventListener("click", hideModal);
 
-function hideModal() { // close the modal
+function hideModal() {
   var element = document.getElementById('modal');
   element.classList.remove('show-modal');
 }
