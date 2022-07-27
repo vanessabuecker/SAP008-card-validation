@@ -4,6 +4,7 @@
 
  <p>Projeto desenvolvido como parte do objetivo de aprendizagem do Bootcamp Laboratória. <br/>
  O Card Validation é um aplicativo web que permite o usuário validar o número de um cartão de crédito, utilizando o Algoritmo de Luhn.</p>
+ Link para obter acesso ao site: https://vanessabuecker.github.io/SAP008-card-validation/
 
 <h4> Algoritmo de Luhn: </h4>
 
